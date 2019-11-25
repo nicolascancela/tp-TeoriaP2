@@ -1,0 +1,12 @@
+S->ABCCDX
+X->Y
+Y->Z
+Z->z
+A->a
+B->b
+C->c
+D->dE
+E->e
+C->ε
+J->j
+K->L
