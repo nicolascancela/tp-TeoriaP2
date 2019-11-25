@@ -8,7 +8,7 @@ object Main {
    def main(args: Array[String]): Unit = {
     println("==================TP: TEORIA DE LA COMPUTACIÓN==================")
     println("==================LECTURA TXT==================")
-    val l = new lecturaTXT
+    val l = new lecturaTXT("G.txt")
     val g = l.leerGramatica()
     println(g)
     

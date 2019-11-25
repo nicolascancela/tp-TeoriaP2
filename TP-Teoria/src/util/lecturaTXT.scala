@@ -3,7 +3,7 @@ import scala.io.Source
 import tc.Produccion
 import tc.Gramatica
 
-class lecturaTXT {
+class lecturaTXT(nombreArchivo: String) {
   
   def leerGramatica(): Gramatica = {
       val txt = leerTXT()
@@ -14,7 +14,7 @@ class lecturaTXT {
     }
 
     def leerTXT(): List[String] = {
-      val path = "resources/G.txt"
+      val path = "resources/" + nombreArchivo
       val archivo = Source.fromResource(path)
       val lineas = archivo.getLines().toList
       archivo.close()
